@@ -1,4 +1,4 @@
 package com.google.demo.dao.impl;
 
-public class huiguDaoImpl {
+public class huifuDaoImpl {
 }
