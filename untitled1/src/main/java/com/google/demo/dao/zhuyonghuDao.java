@@ -2,10 +2,11 @@ package com.google.demo.dao;
 
 import com.google.demo.domain.zhuyonghu;
 
-import java.util.List;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public interface zhuyonghuDao {
-    List<zhuyonghuDao> findzyh(zhuyonghu a);
+    boolean findzyh(zhuyonghu a) throws SQLException;
     int savezyh(zhuyonghu b);
-    
+
 }
