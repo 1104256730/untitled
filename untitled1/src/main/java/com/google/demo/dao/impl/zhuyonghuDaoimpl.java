@@ -6,8 +6,6 @@ import com.google.demo.domain.zhuyonghu;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class zhuyonghuDaoImpl extends BaseDao implements zhuyonghuDao {
@@ -17,11 +15,10 @@ public class zhuyonghuDaoImpl extends BaseDao implements zhuyonghuDao {
         ResultSet resultSet = executeQuery(String.valueOf(sql), a.getName());
         return resultSet.next();
     }
-    
     @Override
     public int savezyh(zhuyonghu b) {
         String sql = "insert into zyh(id,name,password,phone,email)values(?,?,?,?,?)";
         return executeUpdate(sql, b.getZyhID(), b.getName(), b.getPassword(), b.getPhone(), b.getEmail());
     }
-    
+
 }
