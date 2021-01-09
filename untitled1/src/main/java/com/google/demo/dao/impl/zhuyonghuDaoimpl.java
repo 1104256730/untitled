@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-public class zhuyonghuDaoimpl extends BaseDao implements zhuyonghuDao {
+public class zhuyonghuDaoImpl extends BaseDao implements zhuyonghuDao {
     @Override
     public boolean findzyh(zhuyonghu a) throws SQLException {
         StringBuilder sql = new StringBuilder("selece * from zyh name=? "); //创建查询语句
